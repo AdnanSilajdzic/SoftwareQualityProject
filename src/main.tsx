@@ -8,7 +8,7 @@ import { store } from "./state/store";
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/SoftwareQualityProject",
     element: <Search />,
   },
   {
