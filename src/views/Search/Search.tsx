@@ -1,5 +1,4 @@
 import styles from "./Search.module.css";
-import RubiconLogo from "../../assets/icons/rubicon.svg";
 import "../../index.css";
 
 import CategorySwitch from "../../components/CategorySwitch/CategorySwitch";

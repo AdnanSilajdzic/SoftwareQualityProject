@@ -7,22 +7,12 @@ import { RootState } from "../../state/store";
 import { fetchSearchResults } from "../../api/fetchSearchResults";
 import { BarLoader } from "react-spinners";
 
-interface MovieData {
-  id: number;
-  title: string; // for movies
-  name: string; // for tv shows
-  poster_path: string;
-  first_air_date: string; // for tv shows
-  release_date: string; // for movies
-}
-
 const ContentList = () => {
   const searchCategory = useSelector((state: RootState) => state.search.searchCategory);
   const searchString = useSelector((state: RootState) => state.search.searchString);
   const searchResults = useSelector((state: RootState) => state.search.searchResults);
   const dispatch = useDispatch();
   const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(false);
   const searchStringRef = useRef<string | null>(null);
 
   useEffect(() => {
@@ -36,7 +26,7 @@ const ContentList = () => {
         dispatch({ type: "search/setSearchResults", payload: data });
         setLoading(false);
       } catch (error) {
-        setError(true);
+        console.log(error);
       }
     };
 

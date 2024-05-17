@@ -1,5 +1,4 @@
 import styles from "./Details.module.css";
-import RubiconLogo from "../../assets/icons/rubicon.svg";
 import "../../index.css";
 import { useEffect, useState } from "react";
 import { fetchContentDetails } from "../../api/fetchContentDetails";
