@@ -1,0 +1,54 @@
+@font-face {
+  font-family: "Bozon-ExtraBold";
+  src: url("../../assets/fonts/bozon/Bozon-Extra-Bold.otf");
+}
+
+@font-face {
+  font-family: "BozonBold";
+  src: url("../../assets/fonts/bozon/Bozon-Bold.otf");
+}
+
+.container {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+}
+
+.overviewContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin-top: 20px;
+  width: 80%;
+}
+
+.overviewContainer h1 {
+  font-family: "Bozon-ExtraBold";
+  font-size: 2.3rem;
+  margin-bottom: 10px;
+}
+
+.splitDetails {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.content {
+  width: 50%;
+  justify-content: center;
+  text-justify: inter-word;
+}
+
+.content b {
+  font-family: "BozonBold";
+}
+
+@media screen and (max-width: 768px) {
+  .splitDetails {
+    flex-direction: column;
+  }
+  .content {
+    width: 100%;
+  }
+}

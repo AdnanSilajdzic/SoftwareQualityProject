@@ -1,0 +1,25 @@
+.searchContainer {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.searchbar {
+  width: 100%;
+  height: 50px;
+  background-color: white;
+  border-radius: 29px;
+  font-family: "Bozon";
+  padding-left: 20px;
+  font-size: 1.3rem;
+}
+
+.searchbar:focus {
+  outline: none;
+}
+
+.searchIcon {
+  position: absolute;
+  cursor: pointer;
+  margin-right: 20px;
+}

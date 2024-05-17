@@ -1,0 +1,31 @@
+.switch {
+  width: 160px;
+  height: 60px;
+  background-color: #000a3e;
+  border-radius: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  font-family: "Bozon-DemiBold";
+}
+
+.active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  color: black;
+  padding: 10px;
+  border-radius: 11px;
+  cursor: pointer;
+}
+
+.inactive {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 11px;
+  cursor: pointer;
+}

@@ -1,0 +1,67 @@
+.card {
+  height: 450px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.poster {
+  z-index: 10;
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
+  border-radius: 10%;
+  transition: all 0.5s;
+}
+
+.info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.movieName {
+  font-family: "Bozon-Bold";
+  font-size: 20px;
+  margin-bottom: 0px;
+}
+
+.year {
+  font-family: "Bozon-Bold";
+  font-size: 14px;
+}
+
+.hiddenText {
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.1rem;
+}
+
+.hiddenText img {
+  width: 30px;
+  height: 30px;
+  rotate: 180deg;
+}
+
+.poster:hover {
+  margin-top: 30px;
+  height: 75%;
+}
+
+@animation posterHover {
+  from {
+    margin-top: 0px;
+    height: 80%;
+  }
+  to {
+    margin-top: 20px;
+    height: 75%;
+  }
+}
