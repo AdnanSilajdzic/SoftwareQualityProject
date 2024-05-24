@@ -12,7 +12,7 @@ const Search = () => {
   return (
     <div className={styles.main}>
       <div className={styles.title}>
-        <h1>Disover your next favourite</h1>
+        <h1>Disove your next favourite</h1>
         <h1>{currentCategory === "movies" ? "Movie" : "TV Show"}</h1>
       </div>
 
